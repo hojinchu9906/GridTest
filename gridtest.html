@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko-kr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> 레아아웃 </title>
+
+    <!-- Bootstrap -->
+    <link href="./css/nomalize.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/jquery.fancybox.css" rel="stylesheet">
+    <style>
+      @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+      @font-face{
+      font-family:'NanumBarunGothic';
+      src:url("../fonts/NanumBarunGothic.eot");
+      src:local("☺"),url("../fonts/NanumBarunGothic.woff") format("woff");
+      }
+      a:hover { text-decoration: none;}      
+      body {font-family: "NanumBarunGothic",  sans-serif; padding-top: 90px; }  
+      .container-fluid { padding: 0;}
+
+
+    /* 아이콘 부분 */
+
+    .service a { display: block;}
+
+
+    .service a:hover .icons  { background-color:#0080C0;}
+    .service a:hover .icontxt h4 { color: #0080FF; }
+    .icontxt h4 {font-weight: bold; font-family: 'Source Sans Pro'; font-size: 20px; text-transform: uppercase; text-align: left;}
+    @media (min-width: 768px) {
+      .icontxt h4 { text-align: center;}
+    }
+
+    @media (max-width: 360px) {
+      .icontxt p { display: none; }
+      .icontxt h4 { display: none; }
+      .book img { width: 50%; height: auto;}
+    }
+
+
+
+ /*포트폴리오 사이트 부분 */
+  .site h4 { border-bottom: 1px solid #C0C0C0; font-size: 16px; padding-bottom: 5px }
+  
+
+/* Contact 와 footer 부분 */
+  .contact { padding: 50px 0;}
+
+  .form-group input[type="text"], .form-group textarea { border-radius: 0;}
+
+  .required {
+    background: url(./imgs/required.png) right top no-repeat;
+  }
+
+  button.send_btn {
+    cursor: pointer;
+    background:url(./imgs/pattern.png) repeat;
+    color: #FFF;
+    margin:0 10px 0 0;
+    display: inline-block;
+    padding: 0 20px;
+    height:40px;
+    line-height:40px;
+    font-size: 14px;
+    width: auto;
+    border:0;
+  }
+  button.send_btn:hover {
+     background-image:url(./imgs/color_pattern.png);
+     text-decoration:none;
+  }
+
+  footer { padding: 40px 0; color: #fff}
+
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+  <div class="container-fluid">
+
+        <div id="contact"></div>
+
+         <div class="container contact" >
+          <div class="row">
+            <div class="col-md-7">
+                  <form class="form-horizontal" role="form" id="ajax-contact-form" action="#">
+                    <div class="form-group">                                              
+                      <textarea name="message" class="form-control required" id="message" title="Message" placeholder="내용" rows=5></textarea>
+                    </div>
+                    <div class="form-group">   
+                      <button class="send_btn" type="submit"> 전 송</button>
+                    </div>  
+                  </form> 
+             </div>
+
+              <div class="col-md-4  col-md-offset-1 contact_info">
+                  <form class="form-horizontal" role="form" id="ajax-contact-form1" action="#">
+                      <div class="form-group">
+                          <textarea name="message" class="form-control required" id="message1" title="Message" placeholder="내용" rows=5></textarea>
+                      </div>
+                      <div class="form-group">
+                          <button class="send_btn" type="submit"> 테스트</button>
+                      </div>
+                  </form>
+              </div>
+            </div>                
+            </div><!-- contact_form -->
+  </div> 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+
+</body>
+</html>
